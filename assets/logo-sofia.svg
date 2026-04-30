@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" role="img" aria-labelledby="title desc">
+  <title id="title">Sofia Alamini</title>
+  <desc id="desc">Logo minimalista em texto para Sofia Alamini.</desc>
+  <rect x="0" y="0" width="120" height="120" rx="28" fill="#07110E"/>
+  <text
+    x="60"
+    y="72"
+    text-anchor="middle"
+    fill="#F3F0E6"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="42"
+    font-weight="700"
+    letter-spacing="-2"
+  >SA</text>
+  <text
+    x="154"
+    y="54"
+    fill="#F3F0E6"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="34"
+    font-weight="700"
+    letter-spacing="-1"
+  >Sofia Alamini</text>
+  <text
+    x="156"
+    y="86"
+    fill="#AEB7AA"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="17"
+    font-weight="400"
+  >Front-end portfolio</text>
+</svg>
