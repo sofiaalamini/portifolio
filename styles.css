@@ -154,13 +154,12 @@ button:disabled {
   min-width: 48px;
   min-height: 48px;
   align-items: center;
-  gap: 0.7rem;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 16px;
   background: oklch(100% 0 0 / 0.035);
   color: var(--text);
   font-family: 'Chivo', sans-serif;
-  padding: 0.35rem 1rem 0.35rem 0.4rem;
+  padding: 0.35rem;
   font-size: 0.92rem;
   font-weight: 900;
   letter-spacing: 0;
@@ -175,16 +174,12 @@ button:disabled {
   width: 38px;
   height: 38px;
   place-items: center;
-  border: 1px solid var(--line-soft);
-  border-radius: 999px;
-  background: transparent;
+  border: 0;
+  border-radius: 12px;
+  background: #07110e;
   color: var(--text);
   font-size: 0.78rem;
   letter-spacing: 0.03em;
-}
-
-.brand-name {
-  transform: translateY(-1px);
 }
 
 .brand-mark:hover {
@@ -511,6 +506,28 @@ button:disabled {
 
 .about-story p {
   margin: 0;
+}
+
+.about-highlight {
+  border: 1px solid oklch(74% 0.13 150 / 0.34);
+  background:
+    linear-gradient(135deg, oklch(74% 0.13 150 / 0.11), transparent 58%),
+    oklch(100% 0 0 / 0.025);
+  color: var(--text) !important;
+  padding: 1.15rem 1.2rem;
+  line-height: 1.7;
+}
+
+.about-highlight::before {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+  content: 'Destaque';
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .process-board {

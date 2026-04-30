@@ -28,53 +28,53 @@ const projects = [
   {
     id: 2,
     title: 'SFP Hub',
-    description: 'Plataforma centralizada para gestao e organizacao de recursos, pensada para reduzir atrito em tarefas recorrentes.',
+    description: 'Plataforma centralizada para gestão e organização de recursos, pensada para reduzir atrito em tarefas recorrentes.',
     category: 'fullstack',
     technologies: ['TypeScript', 'React', 'Tailwind CSS', 'Node.js'],
     liveUrl: 'https://sfp-hub.vercel.app',
     githubUrl: 'https://github.com/sofiaalaminis/sfp-hub',
     scope: 'Produto',
     year: '2026',
-    signal: 'Hub centralizado para organizar recursos e rotinas.',
+    signal: 'Hub centralizado para organizar recursos e rotinas com mais clareza.',
   },
   {
     id: 3,
     title: 'Izes',
-    description: 'Aplicacao web com interface responsiva, estrutura moderna e atencao a experiencia de uso.',
+    description: 'Aplicação web com interface responsiva, estrutura moderna e atenção à experiência de uso.',
     category: 'fullstack',
     technologies: ['TypeScript', 'React', 'Tailwind CSS', 'Node.js'],
     liveUrl: 'https://izes.vercel.app',
     githubUrl: 'https://github.com/sofiaalaminis/izes',
     scope: 'Web app',
     year: '2026',
-    signal: 'Interface moderna com fluxo direto e responsivo.',
+    signal: 'Interface moderna, fluxo direto e comportamento responsivo.',
   },
   {
     id: 4,
     title: 'Petfy',
-    description: 'Sistema para gestao de pets, com funcionalidades de organizacao, acompanhamento e apoio a adocao responsavel.',
+    description: 'Sistema para gestão de pets, com funcionalidades de organização, acompanhamento e apoio à adoção responsável.',
     category: 'frontend',
     technologies: ['HTML5', 'CSS3', 'JavaScript'],
     liveUrl: 'https://petfy-topaz.vercel.app',
     githubUrl: 'https://github.com/sofiaalaminis/petfy',
     scope: 'Impacto social',
     year: '2026',
-    signal: 'Experiencia voltada a cuidado, adocao e organizacao.',
+    signal: 'Experiência voltada a cuidado, adoção e organização.',
   },
 ];
 
 const skillGroups = {
   frontend: {
     title: 'Interface',
-    intro: 'HTML, CSS, JavaScript, TypeScript e frameworks para construir telas usaveis.',
+    intro: 'HTML, CSS, JavaScript, TypeScript e frameworks para construir interfaces usáveis, responsivas e bem estruturadas.',
   },
   backend: {
-    title: 'Logica',
-    intro: 'Base em C, Java e Node.js para pensar dados, regras e estruturas.',
+    title: 'Lógica',
+    intro: 'Base em C, Java, Python, Node.js e MySQL para pensar dados, regras e estruturas com mais precisão.',
   },
   tools: {
     title: 'Entrega',
-    intro: 'Ferramentas de prototipacao, versionamento e editor para transformar ideia em projeto.',
+    intro: 'Ferramentas de prototipação, versionamento e edição para transformar ideia em projeto com organização.',
   },
 };
 
@@ -204,7 +204,7 @@ function renderProjects() {
               <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
             </a>
             <a href="${project.githubUrl}" target="_blank" rel="noreferrer">
-              <span>Codigo</span>
+              <span>Código</span>
               <i class="fa-brands fa-github" aria-hidden="true"></i>
             </a>
           </div>
@@ -359,7 +359,7 @@ function validateForm(form) {
   if (!values.email) {
     errors.email = 'Informe seu email.';
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) {
-    errors.email = 'Use um email valido.';
+    errors.email = 'Use um email válido.';
   }
 
   if (!values.message) {
@@ -406,7 +406,7 @@ function initForm() {
       button.disabled = false;
       button.firstChild.textContent = 'Enviar mensagem';
       status.classList.add('success');
-      status.textContent = 'Mensagem pronta. Sofia retorna assim que possivel.';
+      status.textContent = 'Mensagem pronta. Sofia retorna assim que possível.';
       form.reset();
     }, 900);
   });
