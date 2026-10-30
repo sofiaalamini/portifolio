@@ -1,23 +1,26 @@
 # Status
 
-Atualizado em: 2026-10-30 · por: Codex
+Atualizado em: 2026-10-30 · por: Claude
 
 ## Demanda em andamento
 `docs/demandas/001-reconstruir-em-react.md` · branch: `demanda/001-reconstruir-em-react`
 
 ## Estado
-React + TypeScript + Tailwind/Vite implementados; PR em rascunho: https://github.com/sofiaalamini/portifolio/pull/1. Preview inicial: https://portifolio-m59gszeu3-sofiaalaminis-projects.vercel.app (06f4af1). Preview automático explicitamente autorizado pela Sofia; produção preservada. Nenhum deploy manual ou alteração de acessos.
+React + TypeScript + Tailwind/Vite implementados; PR em rascunho: https://github.com/sofiaalamini/portifolio/pull/1. Preview automático autorizado pela Sofia; produção preservada. Nenhum deploy manual ou alteração de acessos. Execução passou do Codex para o Claude por decisão da Sofia.
 
-Conteúdo e metadados comparados por campos com 33b744f: idênticos, exceto correções previstas. Três capturas reais das demos em public/previews. Testes locais em Chrome passaram em 360/768/1280: filtros, menu/Escape, salto/foco, ausência de rolagem horizontal, imagens e movimento reduzido sem duplicações. Evidências em docs/checks. Script imperativo substituído pelos componentes TSX.
+Verificado em 2026-10-30 (detalhes em docs/checks): `npm run build`, `npm run lint` e `npx tsc --noEmit` sem erros; conteúdo e metadados idênticos a 33b744f exceto pelas correções previstas; testes locais de interface em 360/768/1280; links 200; capturas reais das demos.
+
+Lighthouse mobile, 3 execuções no build local do commit 592f1b7: 100 em desempenho, acessibilidade, boas práticas e SEO (docs/checks/lighthouse-local.json). Não vale como a medição do preview.
+
+Busca pelo número do telefone na árvore de trabalho, incluindo dist/: nenhuma ocorrência.
 
 ## Próximo passo
-Concluir as três medições Lighthouse e os testes na sessão autenticada do preview; atualizar este PR com evidências e pedir revisão por Claude e aprovação visual da Sofia.
+Sofia aprova as capturas lado a lado (360 e 1280 px). Depois, medir o Lighthouse na URL do preview, com a sessão logada da Sofia, e rodar a revisão dirigida do PR.
 
 ## Bloqueios e dúvidas
-- LinkedIn: fetch retornou 999; navegação real no Chrome retornou 200. Os outros sete destinos também retornaram 200. Evidência em docs/checks/links.json; nenhum endereço alterado além da correção Petfy prevista.
-- Preview protegido por login Vercel. A primeira sessão terminou na autenticação. Sofia informou ter aberto a aba no Opera GX, cuja sessão não é compartilhada. Reabrir Chrome e entrar dentro dessa janela. Nenhum resultado de preview/Lighthouse foi aprovado. Nenhum token/bypass criado.
-- A busca de aceite pelo número precisa ser feita pela Sofia, sem enviar o dado nem gravá-lo no repositório. Busca por link de telefone e prévias embutidas no código atual não encontrou ocorrências.
-- Capturas de comparação em 360 e 1280 px aguardam aprovação da Sofia.
+- Preview protegido por login Vercel; a extensão do Chrome não estava conectada nesta sessão e não há Chrome instalado (só Edge e Opera GX). Nenhum token/bypass criado. Critério do Lighthouse no preview e testes de interface no preview seguem pendentes.
+- Busca do número no HTML do preview e no histórico dos commits da branch: pendente.
+- Aprovação visual das capturas: Sofia.
 - Publicação/merge permanecem sem autorização; critério de produção ficará pendente no PR.
 
 ## Recuperação
