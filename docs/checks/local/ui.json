@@ -1,0 +1,83 @@
+{
+  "url": "http://127.0.0.1:4173",
+  "checkedAt": "2026-10-30T20:25:53.467Z",
+  "viewports": [
+    {
+      "width": 360,
+      "horizontalOverflow": false,
+      "focusedControls": 22,
+      "reducedMotionTechnologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Vue.js",
+        "Tailwind",
+        "Figma",
+        "Git",
+        "UX/UI"
+      ]
+    },
+    {
+      "width": 768,
+      "horizontalOverflow": false,
+      "focusedControls": 22,
+      "reducedMotionTechnologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Vue.js",
+        "Tailwind",
+        "Figma",
+        "Git",
+        "UX/UI"
+      ]
+    },
+    {
+      "width": 1280,
+      "horizontalOverflow": false,
+      "focusedControls": 27,
+      "reducedMotionTechnologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Vue.js",
+        "Tailwind",
+        "Figma",
+        "Git",
+        "UX/UI"
+      ]
+    }
+  ],
+  "filters": {
+    "Front-end": [
+      "Izes",
+      "Petfy"
+    ],
+    "Full-stack": [
+      "Calangos"
+    ],
+    "Back-end": [],
+    "Todos": [
+      "Calangos",
+      "Izes",
+      "Petfy"
+    ]
+  },
+  "errors": [],
+  "links": [
+    "https://calangos-ruddy.vercel.app/",
+    "https://github.com/sofiaalamini/Calangos",
+    "https://izes-site.vercel.app/",
+    "https://github.com/sofiaalamini/izes-site",
+    "https://petfy-topaz.vercel.app/",
+    "https://github.com/sofiaalamini/petfy",
+    "https://www.linkedin.com/in/sofiaalamini/",
+    "https://github.com/sofiaalamini"
+  ]
+}

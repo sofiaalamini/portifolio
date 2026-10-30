@@ -1525,3 +1525,6 @@ body.has-pointer .cursor-halo {
 }
 
 .contact-methods .icon { padding: 10px; width: 38px; height: 38px; }
+
+.desktop-nav a { display: inline-flex; align-items: center; justify-content: center; }
+.mobile-panel a { display: flex; align-items: center; justify-content: flex-start; }

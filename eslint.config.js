@@ -9,4 +9,5 @@ export default tseslint.config(
  js.configs.recommended, ...tseslint.configs.recommended,
  { files: ['**/*.{ts,tsx}'], languageOptions: { globals: globals.browser }, plugins: { 'react-hooks': reactHooks, 'react-refresh': reactRefresh }, rules: { ...reactHooks.configs.recommended.rules, 'react-refresh/only-export-components': ['warn', { allowConstantExport: true }] } },
  { files: ['**/*.{js,mjs}'], languageOptions: { globals: globals.node } },
+ { files: ['checks/**/*.mjs'], languageOptions: { globals: { ...globals.node, ...globals.browser } } },
 )

@@ -1,0 +1,110 @@
+{
+  "reference": "33b744f",
+  "identical": true,
+  "title": "Sofia Alamini | Front-End Portfolio",
+  "description": "Portfólio de Sofia Alamini, desenvolvedora Front-End em formação, com foco em interfaces intuitivas, funcionais e centradas no usuário.",
+  "fields": {
+    ".hero-copy p": [
+      "Software Engineering / Front-end",
+      "Desenvolvedora Front-End em formação, focada em transformar ideias em interfaces intuitivas, funcionais e centradas no usuário."
+    ],
+    ".hero-title": [
+      "Sofia Alamini."
+    ],
+    ".profile-notes span, .profile-notes strong": [
+      "Status",
+      "Aberta a oportunidades",
+      "Foco",
+      "HTML, CSS, JS, UX/UI",
+      "Base",
+      "Cascavel PR, Brasil"
+    ],
+    ".profile-code span, .profile-code pre": [
+      "portfolio.js",
+      "build({ focus: \"front-end\", method: \"learn, test, refine\", output: \"clear interfaces\" });"
+    ],
+    ".about-story p": [
+      "Sou desenvolvedora front-end apaixonada por transformar ideias em interfaces intuitivas, funcionais e com foco no usuário.",
+      "Tenho experiência com HTML, CSS e JavaScript, e estou em constante evolução com React e TypeScript, priorizando código limpo, escalável e boas práticas de desenvolvimento.",
+      "Mais do que desenvolver telas, busco entender o problema por trás de cada projeto para entregar soluções que realmente façam sentido para o usuário.",
+      "Atuei no desenvolvimento de uma solução de monitoramento inteligente de impactos ambientais em um hackathon, sendo responsável pela interface e experiência do usuário. O projeto conquistou o 4º lugar, demonstrando minha capacidade de trabalhar sob pressão, tomar decisões e entregar valor real.",
+      "Busco uma oportunidade como Front-End Developer Jr para crescer tecnicamente e contribuir com produtos que gerem impacto."
+    ],
+    ".process-board article > *": [
+      "01",
+      "Entender",
+      "Mapear objetivo, usuário e restrições antes de abrir o editor.",
+      "02",
+      "Prototipar",
+      "Testar hierarquia, fluxo e visual com iterações pequenas.",
+      "03",
+      "Construir",
+      "Implementar com HTML semântico, CSS responsivo e JavaScript claro."
+    ],
+    ".section-heading h2": [
+      "Interfaces com propósito, código limpo e atenção ao usuário.",
+      "Habilidades organizadas pelo trabalho que elas resolvem.",
+      "Trabalhos que mostram estudo aplicado em produto."
+    ],
+    ".skill-cluster h3": [
+      "Interface",
+      "Lógica",
+      "Entrega"
+    ],
+    ".skill-cluster p": [
+      "HTML, CSS, JavaScript, TypeScript e frameworks para construir interfaces usáveis, responsivas e bem estruturadas.",
+      "Base em C, Java, Python, Node.js e MySQL para pensar dados, regras e estruturas com mais precisão.",
+      "Ferramentas de prototipação, versionamento e edição para transformar ideia em projeto com organização."
+    ],
+    ".skill-tags span": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Vue.js",
+      "Tailwind CSS",
+      "C",
+      "Java",
+      "Node.js",
+      "Python",
+      "MySQL",
+      "Git",
+      "Figma",
+      "VS Code"
+    ],
+    ".project-meta span, .project-copy h3, .project-copy p, .tech-stack span": [
+      "Produto",
+      "2026",
+      "Calangos",
+      "Plataforma centralizada para gestão e organização de recursos, pensada para reduzir atrito em tarefas recorrentes.",
+      "Hub centralizado para organizar recursos e rotinas com mais clareza.",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Web app",
+      "2026",
+      "Izes",
+      "Aplicação web com interface responsiva, estrutura moderna e atenção à experiência de uso.",
+      "Interface moderna, fluxo direto e comportamento responsivo.",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Impacto social",
+      "2026",
+      "Petfy",
+      "Sistema para gestão de pets, com funcionalidades de organização, acompanhamento e apoio à adoção responsável.",
+      "Experiência voltada a cuidado, adoção e organização.",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    ".contact-copy > p": [
+      "Contato",
+      "Prefiro conversas objetivas: contexto, desafio e o que precisa sair do papel. A partir daí eu respondo com próximos passos."
+    ],
+    ".contact-copy h2": [
+      "Tem um projeto, vaga ou ideia? Vamos conversar."
+    ]
+  }
+}
