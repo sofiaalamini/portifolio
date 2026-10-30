@@ -1,16 +1,17 @@
 # Status
 
-Atualizado em: 2026-10-30 · por: Claude
+Atualizado em: 2026-10-30 · por: Codex
 
 ## Demanda em andamento
-`docs/demandas/001-reconstruir-em-react.md` · nível: padrao · branch: `demanda/001-reconstruir-em-react`
+`docs/demandas/001-reconstruir-em-react.md` · branch: `demanda/001-reconstruir-em-react`
 
 ## Estado
-Preparada. Nenhum código da demanda foi escrito. O repositório ainda é o site em HTML, CSS e JS puros; a `main` (`33b744f`) já está sem o telefone.
+Implementação iniciada a partir de 33b744f: React, TypeScript, Vite e Tailwind; conteúdo e estilos preservados, com as correções da 001.
 
 ## Próximo passo
-Criar o projeto Vite + React + TypeScript + Tailwind e abrir a primeira PR com preview da Vercel, para medir o Lighthouse cedo.
+Concluir componentes, instalar dependências, validar build/lint/tipos e abrir PR cedo para verificar o preview.
 
 ## Bloqueios e dúvidas
-- Rollback: anotar o ID do deploy de produção atual (`dpl_Hn3PW58dSdQP43fWKetmo7jgR6TW`) no procedimento de volta antes de publicar.
-- Merge e publicação só com autorização da Sofia.
+- Publicação em produção depende de autorização; o critério de produção ficará pendente no PR.
+- Preview automático ao abrir PR precisa ser distinguido do limite de não executar deploy.
+- Busca pelo número: Sofia deverá executá-la sem informar ou gravar o dado no repositório.
