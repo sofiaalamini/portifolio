@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-30T20:20:19.604Z",
+  "results": [
+    {
+      "url": "https://calangos-ruddy.vercel.app/",
+      "finalUrl": "https://calangos-ruddy.vercel.app/",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/sofiaalamini/Calangos",
+      "finalUrl": "https://github.com/sofiaalamini/Calangos",
+      "status": 200
+    },
+    {
+      "url": "https://izes-site.vercel.app/",
+      "finalUrl": "https://izes-site.vercel.app/",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/sofiaalamini/izes-site",
+      "finalUrl": "https://github.com/sofiaalamini/izes-site",
+      "status": 200
+    },
+    {
+      "url": "https://petfy-topaz.vercel.app/",
+      "finalUrl": "https://petfy-topaz.vercel.app/",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/sofiaalamini/petfy",
+      "finalUrl": "https://github.com/sofiaalamini/petfy",
+      "status": 200
+    },
+    {
+      "url": "https://www.linkedin.com/in/sofiaalamini/",
+      "finalUrl": "https://www.linkedin.com/in/sofiaalamini/",
+      "status": 999
+    },
+    {
+      "url": "https://github.com/sofiaalamini",
+      "finalUrl": "https://github.com/sofiaalamini",
+      "status": 200
+    }
+  ],
+  "browserVerification": {
+    "url": "https://www.linkedin.com/in/sofiaalamini/",
+    "browser": "Chrome for Testing 156",
+    "status": 200,
+    "checkedAt": "2026-10-30T20:33:32.561Z",
+    "note": "Fetch recebeu 999; navegação real no Chrome retornou 200. Sem login no LinkedIn e sem alterar o endereço."
+  }
+}

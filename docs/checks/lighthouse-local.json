@@ -1,0 +1,41 @@
+{
+  "medido_em": "2026-10-30",
+  "commit": "592f1b7",
+  "alvo": "build de producao local (npm run build) servido com gzip em http://127.0.0.1:4290/",
+  "motivo": "preview da Vercel exige login; nenhum cookie ou token foi usado",
+  "nao_vale_como": "criterio do preview (URL da Vercel)",
+  "lighthouse": "13.6.0",
+  "form_factor": "mobile",
+  "navegador": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+  "execucoes": [
+    {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    }
+  ],
+  "mediana": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+  },
+  "metricas_execucao_1": {
+    "LCP_ms": 753,
+    "TBT_ms": 0,
+    "CLS": 0.03457994563941599
+  }
+}

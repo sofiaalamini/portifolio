@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@500;600;700;800;900&family=Work+Sans:wght@400;500;600;700&display=swap');
+@layer theme, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@font-face { font-family: 'Chivo Variable'; font-style: normal; font-weight: 100 900; font-display: swap; src: url('@fontsource-variable/chivo/files/chivo-latin-wght-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Work Sans Variable'; font-style: normal; font-weight: 100 900; font-display: swap; src: url('@fontsource-variable/work-sans/files/work-sans-latin-wght-normal.woff2') format('woff2'); }
 
 :root {
   color-scheme: dark;
@@ -38,7 +43,7 @@ body {
     var(--bg);
   background-size: 72px 72px, 72px 72px, auto;
   color: var(--text);
-  font-family: 'Work Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Work Sans Variable', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -158,7 +163,7 @@ button:disabled {
   border-radius: 16px;
   background: oklch(100% 0 0 / 0.035);
   color: var(--text);
-  font-family: 'Chivo', sans-serif;
+  font-family: 'Chivo Variable', sans-serif;
   padding: 0.35rem;
   font-size: 0.92rem;
   font-weight: 900;
@@ -194,8 +199,8 @@ button:disabled {
   gap: clamp(0.1rem, 1vw, 0.35rem);
 }
 
-.desktop-nav button,
-.mobile-panel button {
+.desktop-nav :is(button, a),
+.mobile-panel :is(button, a) {
   min-height: 44px;
   border: 0;
   border-radius: 999px;
@@ -205,8 +210,8 @@ button:disabled {
   transition: color 160ms var(--ease-out), background-color 160ms var(--ease-out);
 }
 
-.desktop-nav button:hover,
-.mobile-panel button:hover {
+.desktop-nav :is(button, a):hover,
+.mobile-panel :is(button, a):hover {
   background: oklch(100% 0 0 / 0.05);
   color: var(--text);
 }
@@ -223,8 +228,8 @@ button:disabled {
 .nav-cta:focus-visible,
 .button:focus-visible,
 .brand-mark:focus-visible,
-.desktop-nav button:focus-visible,
-.mobile-panel button:focus-visible,
+.desktop-nav :is(button, a):focus-visible,
+.mobile-panel :is(button, a):focus-visible,
 .menu-button:focus-visible,
 .project-actions a:focus-visible,
 .contact-methods a:focus-visible,
@@ -356,7 +361,7 @@ button:disabled {
 .contact-copy h2 {
   margin: 0;
   color: var(--text);
-  font-family: 'Chivo', sans-serif;
+  font-family: 'Chivo Variable', sans-serif;
   font-weight: 900;
   letter-spacing: 0;
   line-height: 0.94;
@@ -552,7 +557,7 @@ button:disabled {
 
 .process-board h3 {
   margin: 0;
-  font-family: 'Chivo', sans-serif;
+  font-family: 'Chivo Variable', sans-serif;
   font-size: clamp(1.3rem, 2.4vw, 2rem);
 }
 
@@ -600,7 +605,7 @@ button:disabled {
 
 .cluster-heading h3 {
   margin: 0;
-  font-family: 'Chivo', sans-serif;
+  font-family: 'Chivo Variable', sans-serif;
   font-size: clamp(1.65rem, 3vw, 2.8rem);
   line-height: 1;
 }
@@ -695,7 +700,7 @@ button:disabled {
 
 .project-copy h3 {
   margin: 0;
-  font-family: 'Chivo', sans-serif;
+  font-family: 'Chivo Variable', sans-serif;
   font-size: clamp(1.6rem, 3vw, 3.2rem);
   line-height: 1;
 }
@@ -759,7 +764,7 @@ button:disabled {
   background: var(--accent);
 }
 
-.project-preview iframe {
+.project-preview img {
   width: 100%;
   height: calc(100% - 34px);
   border: 0;
@@ -824,7 +829,7 @@ button:disabled {
   text-decoration: none;
 }
 
-.contact-methods i {
+.contact-methods .icon {
   display: grid;
   width: 38px;
   height: 38px;
@@ -1282,8 +1287,8 @@ body.has-pointer .cursor-halo {
   box-shadow: 0 18px 44px oklch(74% 0.13 150 / 0.18);
 }
 
-.nav-cta i,
-.button i {
+.nav-cta .icon,
+.button .icon {
   transition: transform 180ms var(--ease-out);
 }
 
@@ -1368,7 +1373,7 @@ body.has-pointer .cursor-halo {
   min-height: 74px;
   padding: 0 2rem;
   color: oklch(92% 0.018 95 / 0.8);
-  font-family: 'Chivo', sans-serif;
+  font-family: 'Chivo Variable', sans-serif;
   font-size: clamp(1.25rem, 2.5vw, 2.6rem);
   font-weight: 900;
   white-space: nowrap;
@@ -1495,3 +1500,31 @@ body.has-pointer .cursor-halo {
     transform: translateX(-50%);
   }
 }
+
+/* Migração 001: mesmas regras visuais, com ajustes de acesso e conteúdo. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.desktop-nav a, .mobile-panel a { text-decoration: none; }
+.project-preview { display: block; text-decoration: none; }
+.project-preview img { object-fit: cover; object-position: top; }
+.contact-layout { grid-template-columns: minmax(0, 1fr); }
+.contact-methods { max-width: 620px; }
+.contact-methods a { border: 1px solid var(--line); background: var(--surface); padding: .8rem 1rem; overflow-wrap: anywhere; }
+.contact-methods svg { flex-shrink: 0; color: var(--accent); }
+.project-empty { padding: 2rem 0; color: var(--muted); }
+.icon { display: inline-block; width: 1em; height: 1em; fill: currentColor; vertical-align: -.125em; flex-shrink: 0; }
+.skill-tags .icon { color: var(--accent); }
+.brand-mark { justify-content: center; text-decoration: none; }
+.contact-copy > p:not(.eyebrow) { max-width: 58ch; }
+@media (prefers-reduced-motion: reduce) {
+ .marquee-track { width: 100%; flex-wrap: wrap; animation: none; }
+ .marquee-track span { padding: .6rem 1rem; min-height: auto; }
+ .marquee-track .marquee-duplicate { display: none; }
+ .hero-copy::before { transform: scaleY(1); animation: none; }
+ .profile-panel, .project-row:hover .project-preview, .project-row:hover .project-copy h3 { transform: none; }
+ .cursor-halo { display: none; }
+}
+
+.contact-methods .icon { padding: 10px; width: 38px; height: 38px; }
+
+.desktop-nav a { display: inline-flex; align-items: center; justify-content: center; }
+.mobile-panel a { display: flex; align-items: center; justify-content: flex-start; }

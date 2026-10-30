@@ -1,0 +1,23 @@
+[
+  {
+    "project": "calangos",
+    "url": "https://calangos-ruddy.vercel.app",
+    "status": 200,
+    "capturedAt": "2026-10-30T18:57:12.862Z",
+    "viewport": "1280x720"
+  },
+  {
+    "project": "izes",
+    "url": "https://izes-site.vercel.app",
+    "status": 200,
+    "capturedAt": "2026-10-30T18:57:14.242Z",
+    "viewport": "1280x720"
+  },
+  {
+    "project": "petfy",
+    "url": "https://petfy-topaz.vercel.app",
+    "status": 200,
+    "capturedAt": "2026-10-30T18:57:15.398Z",
+    "viewport": "1280x720"
+  }
+]
